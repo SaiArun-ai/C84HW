@@ -19,22 +19,43 @@ h1,h4
 {
 	color: white !important;
 }
+.StyleFont{
+	font-family: 'Satisfy', cursive;
+}
+span{
+	font-size :30px;
+	
+}
 
 </style>		
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<title>Car Racing Game</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 </head>
 <body onload="add()">
-<center>
-<h1>Racing Game</h1>
-<canvas id = "myCanvas" width = "800" height = "600"></canvas>
-<h4>
-	<b class = "text-danger">NOTE : </b> If Cars aren't visible then click on canvas
-</h4>
+	<section id = "Frankelstein">
+		<span class = "StyleFont">Car 1 Name</span><input type="text" placeholder="Name of Car 1" id = "Car1"></input>
+		<br>
+		<span class = "StyleFont">Car 2 Name</span><input type="text" placeholder="Name of Car 2" id = "Car2"></input>
+		<br>
+		<button class="StyleFont" onclick="NameStore()">Submit Names</button>
+	</section>
+	<section style = "visibility: hidden;" id = "Gotham Tiblis">
+		<center>
+			<h1>Racing Game</h1>
+			<canvas id = "myCanvas" width = "800" height = "600"></canvas>
+			<h4>
+				<b class = "text-danger">NOTE : </b> If Cars aren't visible then click on canvas
+			</h4>
+			<h1>
+				<b class = "StyleFont" id = "Winner"></b>
+			</h1>
+		</center>
+	</section>
 
-</center>
 <script src="main.js">
 </script>
 </body>
